@@ -6,7 +6,7 @@ import path from "path"
 import { fileURLToPath } from "url";
 const app = express();
 import "./database/databaseconnection.js"
-app.set("port", process.env.PORT || 4000);
+app.set("port", process.env.MONGODB|| 4000);
 app.use(morgan("dev"));
 app.use(cors());
 app.use(express.json()); 
